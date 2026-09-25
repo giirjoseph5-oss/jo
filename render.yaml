@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: deriv-relay
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SYMBOLS
+        value: R_10
+      - key: DERIV_APP_ID
+        value: 1089
